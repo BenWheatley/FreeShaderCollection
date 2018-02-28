@@ -20,7 +20,7 @@ I'm writing some shaders, I don't want to restrict their use, but they have no p
 ![Mandelbrot variations preview](Mandelbrot-variations.shader.png?raw=true "Mandelbrot variations preview")
 
 
-# Mandelbrot variations
+# Moiré unreal
 * Live demo: https://www.shadertoy.com/view/Mscyzs
 * Preview:
 
