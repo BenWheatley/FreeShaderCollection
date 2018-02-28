@@ -24,4 +24,4 @@ I'm writing some shaders, I don't want to restrict their use, but they have no p
 * Live demo: https://www.shadertoy.com/view/Mscyzs
 * Preview:
 
-![Moiré unreal preview](Moiré-unreal.shader.png?raw=true "Moiré unreal preview")
+![Moiré unreal preview](Moiré-unreal.shader.png?raw=true "Moiré unreal preview")
