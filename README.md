@@ -30,3 +30,9 @@ I'm writing some shaders, I don't want to restrict their use, but they have no p
 * Preview:
 
 ![Moiré unreal preview](Moiré-unreal.shader.png?raw=true "Moiré unreal preview")
+
+# Julia variations
+* Live demo: https://www.shadertoy.com/view/MlGczD
+* Preview:
+
+![Julia variations preview](Julia-variations.shader.png?raw=true "Julia variations preview")
