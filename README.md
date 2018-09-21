@@ -1,5 +1,5 @@
 # FreeShaderCollection
-I'm writing some shaders, I don't want to restrict their use, but they have no purpose beyond "ooh that's nice"
+I'm writing some shaders, I don't want to restrict their use, but they have no purpose beyond "ooh that's nice". Not all browsers support the version of GLSL I'm using, so forewarning: these were written on *Chrome/macOS*, and *most of them definitely don't work on Safari/iOS*.
 
 # Fractal soundscape
 * Live demo: https://www.shadertoy.com/view/XdtcDS
