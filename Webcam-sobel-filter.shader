@@ -1,3 +1,10 @@
+/*
+ * "Webcam sobel filter" by Ben Wheatley - 2018
+ * License MIT License
+ * Contact: github.com/BenWheatley
+ */
+
+
 mat3 k1 = mat3( 1,  2,  1,
                 0,  0,  0,
                -1, -2, -1);
