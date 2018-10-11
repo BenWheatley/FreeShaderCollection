@@ -18,12 +18,17 @@ I'm writing some shaders, I don't want to restrict their use, but they have no p
 
 ![Hyperspace explosion preview](Hyperspace-explosion.shader.png?raw=true "Hyperspace explosion preview")
 
+# Julia variations
+* Live demo: https://www.shadertoy.com/view/MlGczD
+* Preview:
+
+![Julia variations preview](Julia-variations.shader.png?raw=true "Julia variations preview")
+
 # Mandelbrot variations
 * Live demo: https://www.shadertoy.com/view/4scyzl
 * Preview:
 
 ![Mandelbrot variations preview](Mandelbrot-variations.shader.png?raw=true "Mandelbrot variations preview")
-
 
 # Moiré unreal
 * Live demo: https://www.shadertoy.com/view/Mscyzs
@@ -31,8 +36,8 @@ I'm writing some shaders, I don't want to restrict their use, but they have no p
 
 ![Moiré unreal preview](Moiré-unreal.shader.png?raw=true "Moiré unreal preview")
 
-# Julia variations
-* Live demo: https://www.shadertoy.com/view/MlGczD
+# Webcam Sobel filter
+* Live demo: https://www.shadertoy.com/view/ltdfDn
 * Preview:
 
-![Julia variations preview](Julia-variations.shader.png?raw=true "Julia variations preview")
+![Webcam Sobel filter preview](Webcam-sobel-filter.shader.png?raw=true "Webcam Sobel filter preview")
