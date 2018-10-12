@@ -41,3 +41,10 @@ I'm writing some shaders, I don't want to restrict their use, but they have no p
 * Preview:
 
 ![Webcam Sobel filter preview](Webcam-sobel-filter.shader.png?raw=true "Webcam Sobel filter preview")
+
+# Webcam 'Giant in a lake'
+* Live demo: https://www.shadertoy.com/view/lt3fW8
+* Preview:
+
+![Webcam 'Giant in a lake' preview](Webcam-Giant-in-a-lake.shader.png?raw=true "Webcam 'Giant in a lake' preview")
+
