@@ -47,7 +47,12 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
     vec3 sum = vec3(0,0,0);
     
     mat3 kernel = k1;
-    int modVal = (int(iTime*15.0) % 8);
+    
+    // Modulo operator doesn't work on the iOS version of WebGL
+    int fastTime = int(iTime*15.0);
+    int floorDivTime = fastTime / 8;
+    int modVal = fastTime - (floorDivTime * 8);
+    
     if (modVal==1) {
         kernel = k2;
     } else if (modVal==2) {
