@@ -2,7 +2,9 @@
 I'm writing some shaders, I don't want to restrict their use, but they have no purpose beyond "ooh that's nice". Not all browsers support the version of GLSL I'm using, so forewarning: these were written on *Chrome/macOS*, and *most of them definitely don't work on Safari/iOS*.
 
 # Fractal soundscape
-* Live demo: https://www.shadertoy.com/view/4ldfWH
+* Live demo: https://www.shadertoy.com/view/XdtcDS
+* No preview — audio only	
+* I might build this up into a proper sound engine, hence the unused functions; right now it's a sound shader that uses Perlin noise to generate pentatonic scale notes (sharp/flat notes on a piano) on quantized time intervals.
 
 # Fire
 * Live demo: https://www.shadertoy.com/view/MsdyDN
@@ -41,7 +43,7 @@ I'm writing some shaders, I don't want to restrict their use, but they have no p
 ![Webcam 'Giant in a lake' preview](Webcam-Giant-in-a-lake.shader.png?raw=true "Webcam 'Giant in a lake' preview")
 
 # Webcam-Microphone Voice Ripple
-* Live demo: https://www.shadertoy.com/view/XdtcDS
+* Live demo: https://www.shadertoy.com/view/4ldfWH
 * No preview — audio so tied into this that screenshots are not helpful
 
 # Webcam Sobel filter
