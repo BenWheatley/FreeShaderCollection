@@ -18,6 +18,13 @@ I'm writing some shaders, I don't want to restrict their use, but they have no p
 
 ![Hyperspace explosion preview](Hyperspace-explosion.shader.png?raw=true "Hyperspace explosion preview")
 
+# Hyperspace tunnel
+* Main git repo: https://github.com/BenWheatley/Hyperspace-tunnel
+* Live demo: https://www.shadertoy.com/view/MlfBRB
+* Preview:
+
+![Hyperspace tunnel preview](Hyperspace-tunnel.shader.png?raw=true "Hyperspace tunnel preview")
+
 # Julia variations
 * Live demo: https://www.shadertoy.com/view/MlGczD
 * Preview:
