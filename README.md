@@ -36,6 +36,12 @@ I'm writing some shaders, I don't want to restrict their use, but they have no p
 
 ![Moiré unreal preview](Moiré-unreal.shader.png?raw=true "Moiré unreal preview")
 
+# Newsprint webcam
+* Live demo: https://www.shadertoy.com/view/XldBzj
+* Preview:
+
+![Newsprint webcam preview](Newsprint_webcam.png?raw=true "Newsprint webcam preview")
+
 # Toon webcam
 * Live demo: https://www.shadertoy.com/view/MtcBDN
 * Preview:
