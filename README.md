@@ -37,6 +37,12 @@ I'm writing some shaders, I don't want to restrict their use, but they have no p
 
 ![Mandelbrot variations preview](Mandelbrot-variations.shader.png?raw=true "Mandelbrot variations preview")
 
+# Menger tartan
+* Live demo: https://www.shadertoy.com/view/tsXGRH
+* Preview:
+
+![Menger tartan preview](Menger-tartan.shader.png?raw=true "Menger tartan preview")
+
 # Moiré unreal
 * Live demo: https://www.shadertoy.com/view/Mscyzs
 * Preview:
