@@ -70,7 +70,6 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord ) {
     float dy = -aspectCorrectedUV.y;
     
     float perlinTheta = (PI + atan(dy, -dx)) / PI;
-    perlinTheta -= 0.01;
     
     float r = centerToCorner - length(vec2(dx, dy));
     r = tan(tangentScale * r);
