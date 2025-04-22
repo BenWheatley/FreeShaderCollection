@@ -9,6 +9,7 @@ precision highp int;
 
 // constants
 const int MAX_OCTAVE = 8;
+const float NOISE_GRID_SIZE = 64.0;
 const float PI = 3.14159265359;
 const float centerToCorner = sqrt((0.5*0.5) + (0.5*0.5));
 const float tangentScale = PI / (2.0*centerToCorner);
@@ -31,7 +32,7 @@ float perlinNoise(float perlinTheta, float r, float time) {
     float sum = 0.0;
     for (int octave=0; octave<MAX_OCTAVE; ++octave) {
         float sf = exp2(float(octave - 1));
-        float sf8 = sf*64.0;
+        float sf8 = sf * NOISE_GRID_SIZE;
         
         float new_theta = sf*perlinTheta;
         float new_r = sf*r/4.0 + time;
