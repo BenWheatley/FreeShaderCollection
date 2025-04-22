@@ -12,7 +12,6 @@ const int MAX_OCTAVE = 8;
 const float PI = 3.14159265359;
 const float centerToCorner = sqrt((0.5*0.5) + (0.5*0.5));
 const float tangentScale = PI / (2.0*centerToCorner);
-const float thetaToPerlinScale = 2.0 / PI;
 
 float cosineInterpolate(float a, float b, float x) {
     float ft = x * PI;
