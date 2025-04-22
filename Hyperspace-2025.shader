@@ -64,11 +64,10 @@ float perlinNoise(float perlinTheta, float r, float time) {
 
 // main
 void mainImage( out vec4 fragColor, in vec2 fragCoord ) {
-    vec2 uv = fragCoord.xy / iResolution.xy;
+    vec2 aspectCorrectedUV = (fragCoord.xy / iResolution.xy - 0.5) * vec2(1.0, iResolution.y / iResolution.x);
     
-    float dx = 0.5 - uv.x;
-    float dy = 0.5 - uv.y;
-    dy *= iResolution.y / iResolution.x;
+    float dx = -aspectCorrectedUV.x;
+    float dy = -aspectCorrectedUV.y;
     
     float perlinTheta = (PI + atan(dy, -dx)) / PI;
     perlinTheta -= 0.01;
