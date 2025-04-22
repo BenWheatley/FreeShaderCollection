@@ -30,7 +30,7 @@ float seededRandom(float seed) {
 float perlinNoise(float perlinTheta, float r, float time) {
     float sum = 0.0;
     for (int octave=0; octave<MAX_OCTAVE; ++octave) {
-        float sf = pow(2.0, float(octave-1));
+        float sf = exp2(float(octave - 1));
         float sf8 = sf*64.0;
         
         float new_theta = sf*perlinTheta;
