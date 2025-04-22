@@ -71,9 +71,9 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord ) {
     
     float perlinTheta = (PI + atan(dy, -dx)) / PI;
     perlinTheta -= 0.01;
-    float r = sqrt((dx*dx) + (dy*dy));
-    r = centerToCorner - r;
-    r = tan(tangentScale*r);
+    
+    float r = centerToCorner - length(vec2(dx, dy));
+    r = tan(tangentScale * r);
     
     float c = perlinNoise(perlinTheta, r, iTime)/8.0;
     c -= 0.3;
