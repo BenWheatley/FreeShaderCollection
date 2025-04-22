@@ -1,5 +1,5 @@
 /*
- * "Hyperspace" by Ben Wheatley - 2017
+ * "Hyperspace" by Ben Wheatley - 2025
  * License MIT License
  * Contact: github.com/BenWheatley
  */
