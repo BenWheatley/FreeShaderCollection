@@ -13,11 +13,12 @@ const float PI = 3.14159265359;
 const float centerToCorner = sqrt((0.5*0.5) + (0.5*0.5));
 const float tangentScale = PI / (2.0*centerToCorner);
 
-float cosineInterpolate(float a, float b, float x) {
-    float ft = x * PI;
-    float f = (1.0 - cos(ft)) * 0.5;
-    
-    return a*(1.0-f) + b*f;
+float fade(float t) {
+    return t * t * t * (t * (t * 6.0 - 15.0) + 10.0);
+}
+
+float interpolate(float a, float b, float x) {
+    return mix(a, b, fade(x));
 }
 
 float seededRandom(float seed) {
@@ -52,10 +53,10 @@ float perlinNoise(float perlinTheta, float r, float time) {
         float t3 = seededRandom( new_theta_floor + sf8 *  new_r_floor      );
         float t4 = seededRandom( new_theta_floor + sf8 * (new_r_floor+1.0) );
         
-        float i1 = cosineInterpolate(t1, t2, fraction_r);
-        float i2 = cosineInterpolate(t3, t4, fraction_r);
+        float i1 = interpolate(t1, t2, fraction_r);
+        float i2 = interpolate(t3, t4, fraction_r);
         
-        sum += cosineInterpolate(i1, i2, fraction_theta) / sf;
+        sum += interpolate(i1, i2, fraction_theta) / sf;
     }
     return 2.0*sum;
 }
