@@ -21,11 +21,7 @@ float cosineInterpolate(float a, float b, float x) {
 }
 
 float seededRandom(float seed) {
-    int x = int(seed);
-    x = x << 13 ^ x;
-    x = (x * (x * x * 15731 + 789221) + 1376312589);
-    x = x & 0x7fffffff;
-    return float(x)/1073741824.0;
+    return fract(sin(seed) * 43758.5453123);
 }
 
 // The magic constants are essentially arbitary:
@@ -33,7 +29,7 @@ float seededRandom(float seed) {
 float perlinNoise(float perlinTheta, float r, float time) {
     float sum = 0.0;
     for (int octave=0; octave<MAX_OCTAVE; ++octave) {
-        float sf = pow(2.0, float(octave));
+        float sf = pow(2.0, float(octave-1));
         float sf8 = sf*64.0;
         
         float new_theta = sf*perlinTheta;
@@ -59,7 +55,7 @@ float perlinNoise(float perlinTheta, float r, float time) {
         float i1 = cosineInterpolate(t1, t2, fraction_r);
         float i2 = cosineInterpolate(t3, t4, fraction_r);
         
-        sum += cosineInterpolate(i1, i2, fraction_theta)/sf;
+        sum += cosineInterpolate(i1, i2, fraction_theta) / sf;
     }
     return 2.0*sum;
 }
